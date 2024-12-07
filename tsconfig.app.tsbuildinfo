@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/constants.ts","./src/main.tsx","./src/types.d.ts","./src/vite-env.d.ts","./src/components/footer.tsx","./src/components/icons.tsx","./src/components/languageselector.tsx","./src/components/navbar.tsx","./src/components/textarea.tsx","./src/hooks/usedebounce.ts","./src/hooks/usestore.ts","./src/services/translate.ts"],"version":"5.6.2"}
