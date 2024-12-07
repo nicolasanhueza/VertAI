@@ -1,0 +1,126 @@
+/* Contenedor principal */
+.container {
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  padding: 0 25px; /* Aumenta el padding si quieres un espacio alrededor del contenido */
+  display: flex; /* Layout en fila */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  margin-bottom: 20rem;
+}
+
+.change-language-button {
+  flex: 0; /* Evita que el botón se estire */
+  align-self: flex-start; /* Alinea hacia arriba en pantallas grandes */
+}
+
+
+
+/* Estilo del Navbar */
+.bg-body-tertiary {
+  width: 100%; /* Mantén el ancho del contenedor */
+  height: 65px; /* Mantén esta altura consistente para el Navbar */
+  background-color: #F5F5F5 !important;
+  display: flex; /* Asegura que los elementos internos se comporten correctamente */
+  align-items: center; /* Centra verticalmente los elementos */ /* Centra horizontalmente los elementos */
+  padding: 0 25px; /* Ajusta el espacio interior */
+}
+
+/* Logo del Navbar */
+.logo-navbar {
+  width: 80px; /* Tamaño del logo */
+  height: auto; /* Mantiene las proporciones */
+  max-height: 50px; /* Asegura que no exceda la altura del Navbar */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #1A2B3C !important;
+  display: flex;
+  align-items: center; /* Centra verticalmente el texto y el logo */
+}
+
+.navbar-brand span {
+  margin-left: 5px; /* Espacio entre el logo y el texto */
+}
+
+/* Botón de Iniciar Sesión */
+button {
+  margin-left: auto; /* Empuja el botón hacia la derecha */
+}
+
+.custom-container {
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  padding: 0 25px; /* Aumenta el padding si quieres un espacio alrededor del contenido */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  width: 100%; /* Asegura que el pie de página inferior ocupe todo el ancho */
+  margin-top: auto;
+}
+
+.footer-top {
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #e9ecef; /* Separación de la sección de Recursos */
+}
+
+.footer h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem; /* Espacio entre los títulos de las secciones */
+  color: #1A2B3C;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex; /* Asegura que los íconos se alineen horizontalmente */
+  gap: 1rem; /* Espacio entre los íconos */
+  align-items: center; /* Centra verticalmente los íconos */
+}
+
+.social-icon {
+  color: #1A2B3C; /* Cambia este color al color que desees */
+  transition: color 0.3s; /* Agrega una transición suave para el color */
+}
+
+.social-icon:hover {
+  color: black; /* Cambia el color al pasar el mouse, puedes ajustar el color como desees */
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 0;
+  }
+
+  .vertical-stack {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column; /* Organiza las columnas en una sola dirección */
+    align-items: center;
+  }
+
+  .from-translate-box, .to-translate-box {
+    width: 100%; /* Ajusta el ancho para ocupar el espacio disponible */
+    padding: 0 5px; /* Ajusta el padding */
+  }
+
+  .change-language-button {
+    align-self: center; /* Centra el botón en pantallas pequeñas */
+  }
+
+  .footer-text-small {
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+    margin: 0 1rem; /* Espacio entre el texto y el logo */
+  }
+}
+
+
